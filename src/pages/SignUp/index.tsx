@@ -18,8 +18,8 @@ import api from '../../services/api';
 
 import getValidationErrors from '../../utils/getValidationErrors';
 
-import Input from '../../componenents/Input';
-import Button from '../../componenents/Button';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 
 import logoImg from '../../assets/logo.png';
 
@@ -59,7 +59,7 @@ const SignUp: React.FC = () => {
 
         Alert.alert(
           'Cadastro realizado com sucesso!',
-          'Você já pode fazer login na aplicação.'
+          'Você já pode fazer login na aplicação.',
         );
 
         navigation.goBack();
@@ -74,11 +74,11 @@ const SignUp: React.FC = () => {
 
         Alert.alert(
           'Erro no cadastro',
-          'Ocorreu um erro ao cadastrar, tente novamente.'
+          'Ocorreu um erro ao cadastrar, tente novamente.',
         );
       }
     },
-    [navigation]
+    [navigation],
   );
 
   return (

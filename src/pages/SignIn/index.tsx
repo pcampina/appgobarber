@@ -19,8 +19,8 @@ import { useAuth } from '../../hooks/auth';
 
 import getValidationErrors from '../../utils/getValidationErrors';
 
-import Input from '../../componenents/Input';
-import Button from '../../componenents/Button';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 
 import logoImg from '../../assets/logo.png';
 
@@ -77,11 +77,11 @@ const SignIn: React.FC = () => {
 
         Alert.alert(
           'Erro na Autenticação',
-          'Ocorreu um erro ao fazer login, verifique seus dados de acesso'
+          'Ocorreu um erro ao fazer login, verifique seus dados de acesso',
         );
       }
     },
-    [signIn]
+    [signIn],
   );
 
   return (

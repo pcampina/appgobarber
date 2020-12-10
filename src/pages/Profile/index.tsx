@@ -18,8 +18,8 @@ import api from '../../services/api';
 
 import getValidationErrors from '../../utils/getValidationErrors';
 
-import Input from '../../componenents/Input';
-import Button from '../../componenents/Button';
+import Input from '../../components/Input';
+import Button from '../../components/Button';
 
 import {
   Container,
